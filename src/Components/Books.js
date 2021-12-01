@@ -13,7 +13,7 @@ import {Button,Table} from 'react-bootstrap';
    
    return (
      <div>
-       <h2>this is books</h2>
+       <h2 className="text-center">books</h2>
          <Table striped bordered hover>
           <thead>
             <tr>

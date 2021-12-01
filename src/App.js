@@ -1,4 +1,4 @@
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {BrowserRouter,Route,Routes,Link} from 'react-router-dom'
 import Books from './Components/Books';
 import Movies from './Components/Movies'
 import Quotes from './Components/Quotes'
@@ -8,6 +8,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Link to="/"> Book</Link>
+        <Link to="/movie"> movies</Link>
+        <Link to="/character"> character</Link>
         <Routes>
           <Route path="/" element={<Books/>}/>
           <Route path="movie" element={<Movies/>}/>
